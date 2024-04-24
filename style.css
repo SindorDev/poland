@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+a {
+     text-decoration: none;
+}
+ul {
+     list-style: none;
+}
+body {
+     background-color: #292929;
+}
+.container {
+     max-width: 1180px;
+     margin: 0 auto;
+     box-sizing: content-box;
+     padding: 0 24px;
+}
+.lists {
+     background-color: white;
+     padding:43px 0 43px 74px ;
+}
+nav {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+}
+.logo {
+     display: flex;
+     align-items: center;
+}
+.lists {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+}
+.item {
+     display: flex;
+     gap: 121px;
+     align-items: center;
+}
+.item span {
+     font-family: Raleway;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 16.44px;
+     color: #1B1B1B;
+     display: inline-block;
+}
+.btn {
+     display: flex;
+     gap: 20px;
+}
+.btn button {
+     padding: 12px 26px;
+     border-radius: 200px;
+     text-transform: uppercase;
+     font-family: Raleway;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 16.44px;
+     text-align: center;
+}
+.primary {
+     background-color: #BC2222;
+     color: #fff;
+     border: none;
+}
+.secondary {
+     background-color: transparent;
+     border: 1px solid #000;
+     color: #1B1B1B;
+}
+.nav-list {
+     margin-top: 30px;
+     display: flex;
+     align-items: center;
+     gap: 0 48px;
+     text-transform: uppercase;
+}
+.item-link {
+     font-family: Raleway;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 16.44px;
+     color: #1B1B1B;
+}
+.menu {
+     display: none;
+}
+#hero {
+     margin-top: 200px;
+     margin-bottom: 161px;
+}
+.hero {
+     flex-direction: column;
+     align-items: center;
+     display: flex;
+     gap: 50px 0;
+}
+.hero p {
+     font-family: Raleway;
+     font-size: 21px;
+     font-weight: 400;
+     line-height: 24.65px;
+     text-align: center;
+     color: #fff;
+}
+.hero strong {
+     font-family: Raleway;
+     font-size: 54px;
+     font-weight: 400;
+     line-height: 64px;
+     text-align: center;
+     color: #fff;
+}
+.line {
+     width: 100%;
+     max-width: 980px;
+     border: 1px solid #fff;
+
+}
+#footer {
+     background-color: #1B1B1B;
+     padding: 90px 0;
+}
+.footer {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.footer p {
+     font-family: Raleway;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 16.44px;
+     text-align: left;
+     color: #fff;
+}
+.footer-text {
+     display: flex;
+     flex-direction: column;
+     gap: 20px 0;
+}
+.footer-text span {
+     text-align: right;
+     font-family: Raleway;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 16.44px;
+     text-align: right;
+     color: #fff;
+}
+@media only screen and (max-width: 1200px){
+     .item {
+          gap: 10px 50px;
+          align-items: flex-start;
+          flex-direction: column;
+     }
+     .nav-list {
+          gap: 0 20px;
+     }
+}
+
+@media only screen and (max-width: 960px){
+     #hero {
+          margin: 100px 0;
+     }
+     .lists {
+          display: none;
+     }
+     nav {
+          align-items: center;
+          justify-content: space-between;
+          grid-template-columns: repeat(2, 1fr);
+     }
+     .menus {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          margin-right: 100px;
+     }
+     .menu {
+          display: block;
+          color: #fff;
+     }
+
+}
+@media only screen and (max-width:575px) {
+     .hero strong {
+          font-size: 32px;
+          line-height: 44px;
+     }
+     .logo img {
+          width: 270px;
+     }
+     .footer {
+          flex-direction: column;
+          gap: 20px 0;
+          align-items: flex-start;
+     }
+     .footer p {
+          line-height: 24px;
+     }
+     .footer-text span {
+          text-align: left;
+     }
+     .menus {
+          margin-right: 10px;
+     }
+     
+}
+@media only screen and (max-width:370px) {
+     .menu {
+          display: none;
+     }
+}
